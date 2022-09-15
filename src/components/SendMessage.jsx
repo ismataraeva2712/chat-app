@@ -24,9 +24,9 @@ const SendMessage = ({scroll}) => {
         scroll.current.scrollIntoView({behavior:'smooth'})
     }
     return (
-        <form onSubmit={sendMessage} className='h-14 w-full max-w-[728px]  flex text-xl absolute bottom-0'>
+        <form onSubmit={sendMessage} className='h-14 w-full   flex text-xl absolute bottom-0'>
             <input value={input} onChange={(e) => setInput(e.target.value)} className='w-full text-xl p-3 bg-gray-900 text-white outline-none border-none' type="text" placeholder='Message' />
-            <button className='w-[20%] bg-green-500' type="submit">Send</button>
+            <button className='w-[20%] bg-primary text-white' type="submit">Send</button>
         </form>
     );
 };

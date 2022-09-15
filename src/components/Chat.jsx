@@ -21,19 +21,24 @@ const Chat = () => {
       });
       return () => unsubscribe();
     },[])
+    useEffect(()=>{
+      var objDiv = document.getElementById("parentDiv");
+  objDiv.scrollTop = objDiv.scrollHeight;
+    },[messages])
     return (
         <>
-        <main className='flex flex-col p-[10px] relative'>
+        <main id='parentDiv' className='flex flex-col p-[10px] relative  overflow-auto mb-12'>
           {messages && messages.map((message)=>(
             <Message key=
             {message.id}
             message={message}
             ></Message>
           ))}
-        
+      
         </main>
         <SendMessage scroll={scroll}></SendMessage>
         <span ref={scroll}></span>
+
         </>
     );
 };
