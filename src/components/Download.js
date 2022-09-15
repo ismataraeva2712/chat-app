@@ -17,7 +17,7 @@ const Download = () => {
                 <div class="card w-40 bg-base-100 shadow-xl mr-12">
   <div class="card-body">
   <img src={playstore} className='h-[70px] w-[80px] p-3' alt="Shoes" />
-    <p className='text-primary font-semibold'>Google Play Store</p>
+    <p className='text-primary font-semibold'> Play Store</p>
    
   </div>
 </div>
