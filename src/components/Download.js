@@ -24,7 +24,7 @@ const Download = () => {
                 <div class="card w-40 bg-base-100 shadow-xl">
   <div class="card-body">
   <img src={applestore} className='h-[70px] w-[80px] p-3' alt="Shoes" />
-    <p className='text-primary font-semibold'>Google Play Store</p>
+    <p className='text-primary font-semibold'>App Store</p>
    
   </div>
 </div>
